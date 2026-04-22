@@ -6,73 +6,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Cloud consulting, security, and IT services for modern businesses." />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      line-height: 1.6;
-      background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+      line-height: 1.7;
+      background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
                   url('robynne-o-HOrhCnQsxnQ-unsplash.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #1f2937;
+      color: #ffffff;
+      min-height: 100vh;
     }
 
     header {
-      background: #0f172a;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       color: #ffffff;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    header > p {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #94a3b8;
     }
 
     nav {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     nav a {
       color: #ffffff;
-      margin: 0 12px;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      font-size: 1.05em;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
     }
 
     section {
       max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-      background: rgba(249, 250, 251, 0.95);
-      margin-top: 0;
-      margin-bottom: 0;
+      margin: 40px auto;
+      padding: 50px 40px;
+      background: rgba(30, 41, 59, 0.4);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     }
 
     h2 {
-      color: #0f172a;
+      color: #ffffff;
+      font-size: 2em;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #e2e8f0;
+      font-size: 1.05em;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    .cta {
-      background: #2563eb;
+    ul li {
+      color: #e2e8f0;
+      margin-bottom: 10px;
+      font-size: 1.05em;
+    }
+
+    ul li strong {
       color: #ffffff;
-      padding: 12px 24px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      color: #ffffff;
+      padding: 15px 35px;
       display: inline-block;
       margin-top: 20px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px 0 rgba(37, 99, 235, 0.4);
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px 0 rgba(37, 99, 235, 0.6);
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     }
 
     footer {
-      background: #e5e7eb;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
+      padding: 30px;
+      font-size: 0.95em;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Your Company</h1>
+  <h1>Cloud Consulting 360</h1>
   <p>Cloud Consulting & IT Services</p>
   <nav>
     <a href="#home">Home</a>
